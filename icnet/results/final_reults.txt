@@ -1,0 +1,66 @@
+final_1: filter-scale 1
+final_2: filter-scale 2
+final_3: filter-scale 1 + weighted loss (meysam weights and segnet manner)
+final_4: filter-scale 1 + random mirror
+final_5: filter-scale 2 + random mirror
+final_6: filter-scale 2 + weighted loss (meysam weights and segnet manner) 
+final_7: filter-scale 1 + weighted loss (meysam weights and direct manner) 
+final_8: filter-scale 1 + weighted loss (my weights and direct manner) 
+final_9: filter-scale 1 + weighted loss (my weights and segnet manner)
+
+----------------------------------------------------------------------------------------------
+
+final_1: MIOU --> 57.39
+final_2: MIOU --> 56.08
+final_3: MIOU --> 36.88
+final_4: MIOU --> 54.63
+final_5: MIOU --> 52.90
+final_6: MIOU --> 29.84
+final_7: MIOU --> 33.84
+final_8: MIOU --> 11.61
+final_9: MOIU --> 56.29
+
+---------------------------------
+
+final: filter-scale 1 (loss_3)
+
+
+.---------------------------------------------------------------------------------------------------------- GOOD RESULTS
+---------------------------------------------------------------------------------------------------------------
+-.-------------------------------------------------------------------------------------------------------------	
+
+final_1: filter-scale 1      
+final_2: filter-scale 2       
+
+--> best form those two  
+
+final_3: filter + data_augmentation
+
+--> best from this and previous
+
+final_4: filter + weighted loss (my weights and segnet manner)   
+final_5: filter + data + weighted loss (my weights and direct manner) ice_12
+final_6: filter + weighted loss (meysam weights and segnet manner) 
+final_7: filter + data + weighted loss (meysam weights and direct manner) ice_14
+
+
+------------------------- on vlaidation
+
+final_1: MIOU --> 38.19 
+final_2: MIOU --> 27.51
+final_3: MIOU --> 32.60
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+-------------------------
+
+final :
+
+ nvidia-docker run -it -d --name jbcarazo_ice_15 -v $(pwd)/cluster_mod_train:/app/cluster_train -v $(pwd)/cluster_mod_eval:/app/cluster_eval -v $(pwd)/loss:/app/loss_data -v $(pwd)/snaps:/app/snapshots -v $(pwd)/out:/app/output -u $(id -u):$(id -g) bluejohn/icnet_images:icyge
+
+final_sin_validation:
+
+nvidia-docker run -it -d --name jbcarazo_ice_19 -v $(pwd)/cluster_mod_train_2:/app/cluster_train -v $(pwd)/cluster_mod_eval_2:/app/cluster_eval -v $(pwd)/loss_2:/app/loss_data -v $(pwd)/snaps_2:/app/snapshots -v $(pwd)/out_2:/app/output -u $(id -u):$(id -g) bluejohn/icnet_images:icygee_4

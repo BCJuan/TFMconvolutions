@@ -1,0 +1,24 @@
+final_1: normal
+final_2: double filters
+
+final_3: previous + data augmentation 
+
+final_4: double filters + outter + my weights
+final_5: double_filters + outer + meysam weights
+
+
+
+
+----------------------------------------------------
+
+final_1: nvidia-docker run -it -d --name jbcarazo_segg_4 -v $(pwd)/cluster_mod_train:/app/train -v $(pwd)/cluster_mod_eval:/app/val  -v $(pwd)/loss:/app/loss_data -v $(pwd)/snaps:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:segg_1
+final_2: nvidia-docker run -it -d --name jbcarazo_segg_6 -v $(pwd)/cluster_mod_train_2:/app/train -v $(pwd)/cluster_mod_eval_2:/app/val  -v $(pwd)/loss_2:/app/loss_data -v $(pwd)/snaps_2:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:segg_2
+
+final_3: nvidia-docker run -it -d --name jbcarazo_segg_20 -v $(pwd)/cluster_mod_train:/app/train -v $(pwd)/cluster_mod_eval:/app/val  -v $(pwd)/loss:/app/loss_data -v $(pwd)/snaps:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:segg_3
+
+final_4:  nvidia-docker run -it -d --name jbcarazo_segg_21 -v $(pwd)/cluster_mod_train_2:/app/train -v $(pwd)/cluster_mod_eval_2:/app/val  -v $(pwd)/loss_2:/app/loss_data -v $(pwd)/snaps_2:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:segg_4
+final_5: nvidia-docker run -it -d --name jbcarazo_segg_22 -v $(pwd)/cluster_mod_train:/app/train -v $(pwd)/cluster_mod_eval:/app/val  -v $(pwd)/loss:/app/loss_data -v $(pwd)/snaps:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:segg_5
+
+final_final: nvidia-docker run -it -d --name jbcarazo_segg_23 -v $(pwd)/cluster_mod_train_2:/app/train -v $(pwd)/cluster_mod_eval_2:/app/val -v $(pwd)/cluster_mod_test:/app/test  -v $(pwd)/loss_2:/app/loss_data -v $(pwd)/snaps_2:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:segg_fin
+
+test: nvidia-docker run -it -d --name jbcarazo_segg_24 -v $(pwd)/cluster_mod_test:/app/test -v $(pwd)/out_2:/app/out -v $(pwd)/loss_2:/app/loss_data -v $(pwd)/snaps_2:/app/log -u $(id -u):$(id -g)  bluejohn/segnets:seg_fi

@@ -1,0 +1,13 @@
+\beamer@slide {dataset:samples}{10}
+\beamer@slide {icnet:table1}{15}
+\beamer@slide {icnet:table2}{16}
+\beamer@slide {icnet:table3}{17}
+\beamer@slide {segnet:table1}{20}
+\beamer@slide {segnet:table2}{21}
+\beamer@slide {segnet:table3}{22}
+\beamer@slide {segnet:inference}{22}
+\beamer@slide {hourglass:diffgrounds}{26}
+\beamer@slide {hourglass:table1}{28}
+\beamer@slide {hourglass:inference}{29}
+\beamer@slide {final:table1}{31}
+\beamer@slide {final:inference}{32}
