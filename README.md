@@ -24,8 +24,9 @@ All three code folders, [ICNet](https://github.com/hellochick/ICNet-tensorflow),
 There also can be found folders to recreate the results.
 
 ## Example of results
-On the left ground truth and on the right prediction by ICNet.
+On the left original image, on the center ground truth and on the right prediction by ICNet.
 
+![Original](https://github.com/BCJuan/TFMconvolutions/blob/master/19_12_c0006_29_image.jpg?raw=True)
 ![Ground Truth](https://github.com/BCJuan/TFMconvolutions/blob/master/19_12_c0006_segm_29_gt.png?raw=true)
 ![Prediction ICNet](https://github.com/BCJuan/TFMconvolutions/blob/master/19_12_c0006_29.jpg?raw=true)
 
