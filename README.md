@@ -20,7 +20,7 @@ The repository consists in mainly two parts: folders for networks and notebooks 
 
 ## Network codes
 
-All three code folders, [ICNet](), [SegNet]() and [Stacked Hourglass]() are modifications of the respective original repos. 
+All three code folders, [ICNet](https://github.com/hellochick/ICNet-tensorflow), [SegNet](https://github.com/tkuanlun350/Tensorflow-SegNet) and [Stacked Hourglass](https://github.com/wbenbihi/hourglasstensorlfow) are modifications of the respective original repos. 
 There also can be found folders to recreate the results.
 
 ## Example of results
