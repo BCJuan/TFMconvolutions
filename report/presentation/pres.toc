@@ -1,9 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Dataset}{7}{0}{2}
-\beamer@sectionintoc {3}{Network study}{11}{0}{3}
-\beamer@subsectionintoc {3}{1}{ICNet}{13}{0}{3}
-\beamer@subsectionintoc {3}{2}{SegNet}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{Stacked Hourglass Network}{24}{0}{3}
-\beamer@subsectionintoc {3}{4}{Network Comparison}{31}{0}{3}
-\beamer@sectionintoc {4}{Conclusions}{34}{0}{4}
